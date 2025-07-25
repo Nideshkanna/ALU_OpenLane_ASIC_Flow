@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 4-bit ALU ASIC Design using OpenLane (SKY130)
 =============================================
 
@@ -75,3 +76,7 @@ Contributions
 You are welcome to fork, modify, and extend this flow for other digital modules.
 All tools and PDKs used are open-source and beginner-friendly.
 
+=======
+# ALU_OpenLane_ASIC_Flow
+4-bit ALU ASIC Design using OpenLane (SKY130)
+>>>>>>> ddb474a3ecdcf6145dca8035ea19750fecb1ecaf
