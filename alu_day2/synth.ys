@@ -1,0 +1,19 @@
+#load the verilog source 
+read_verilog alu.v
+
+#define the top module
+hierarchy -top alu
+
+#generic synthesis
+synth -top alu
+
+#map to Sky130 standard cells
+dfflibmap -liberty /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc        -liberty /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+
+#clean up 
+opt
+
+#write the synthesized netlist
+write_verilog alu_syn.v
