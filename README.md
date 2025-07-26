@@ -1,6 +1,5 @@
 # 4-bit ALU ASIC Design using OpenLane (SKY130)
 
-<<<<<<< HEAD
 This project demonstrates a complete RTL-to-GDSII ASIC design flow using **open-source tools** and **Sky130** PDK.  
 The design is a 4-bit Arithmetic Logic Unit (ALU), implemented and verified over 7 days.
 
