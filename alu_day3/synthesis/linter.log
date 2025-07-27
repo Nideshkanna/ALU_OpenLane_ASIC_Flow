@@ -1,0 +1,6 @@
+%Warning-LATCH: /openlane/designs/alu/src/alu.v:9:1: Latch inferred for signal 'carry' (not all control paths of combinational always assign a value)
+                                                   : ... Suggest use of always_latch for intentional latches
+    9 | always @(*) begin
+      | ^~~~~~
+                ... For warning description see https://verilator.org/warn/LATCH?v=5.009
+                ... Use "/* verilator lint_off LATCH */" and lint_on around source to disable this message.

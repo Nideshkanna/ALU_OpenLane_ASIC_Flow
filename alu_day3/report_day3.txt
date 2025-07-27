@@ -1,0 +1,15 @@
+Day 3 – Floorplanning & Placement
+
+Tools: OpenLane (OpenROAD)
+Run: RUN_2025.07.27_12.38.31
+
+Outputs:
+- floorplan.def          (initial chip floorplan)
+- placement.def          (global placement of standard cells)
+- logs/                  (step-by-step logs)
+- results/               (final GDSII, LEF, signoff reports, metrics)
+
+Warnings:
+- Core area auto‑scaled for power grid
+- Some black‑boxed standard cells during STA
+- No DRC or timing violations at typical corner
