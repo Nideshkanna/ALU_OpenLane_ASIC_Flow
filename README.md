@@ -36,14 +36,19 @@ This project demonstrates a complete RTL-to-GDSII ASIC design flow using **open-
 
 ### ✔️ Day 3: Floorplanning & Placement
 
-* **Flow**: OpenLane automated RTL→GDSII flow
-* **Run**: `RUN_YYYY.MM.DD_HH.MM.SS` under `designs/alu/runs`
-* **Outputs**:
-
-  * `floorplan.def`, `placement.def` under `results`
-  * `logs/` detailing synthesis, floorplan, placement steps
-  * `results/` with GDSII, LEF views, metrics.csv, manufacturability report
-* **Report**: `alu_day3/report_day3.txt`
+* **Objective:** Define chip dimensions, place IO pins, macros, and arrange standard cells for routing.
+* **Flow Run:**  
+  `designs/alu/runs/RUN_2025.08.14_12.12.51`
+* **Steps Executed:**
+  1. **Floorplanning**: Generated die/core area, pin placement, tap cells, and endcaps.
+  2. **Placement**: Performed global and detailed placement of standard cells.
+  3. **Verified** layout in Magic — no DRC errors at this stage.
+* **Key Outputs:**
+  - `alu_day3/floorplan.def` → Floorplan DEF
+  - `alu_day3/placement.def` → Placement DEF
+  - `results/final/` → GDS, LEF, SPEF, LIB, SDF, Verilog netlist
+  - `report_day3.txt` → Metrics summary
+* **Visual:** Layout viewed in Magic showing placed cells and IO pins.
 
 ---
 
